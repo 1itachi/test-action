@@ -1,0 +1,21 @@
+name: 'Name of action'
+description: 'Description of action'
+inputs:
+  input1:
+    description: Description1
+    required: false
+    default: Default value
+#   input2:
+#     description: Description2
+#     required: false
+# outputs:
+#   coverage:
+#     description: Output description
+#     value: output value
+
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        echo ${{ inputs.input1 }}
+      shell: bash
