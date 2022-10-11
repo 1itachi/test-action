@@ -8,6 +8,10 @@ inputs:
   input2:
     description: Description2
     required: false
+  input3:
+    description: Description2
+    required: false
+    
 # outputs:
 #   coverage:
 #     description: Output description
@@ -22,4 +26,7 @@ runs:
       
     - run: |
         echo ${{ inputs.input2 }}
+      shell: bash
+    - run: |
+        echo ${{ inputs.input3 }}
       shell: bash
